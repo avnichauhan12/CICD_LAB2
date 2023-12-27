@@ -10,14 +10,14 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'cp index.html build/' // Copy index.html to a build directory
+                echo 'build'
             }
         }
         
         stage('Test') {
             steps {
             
-                sh 'echo "No tests defined for HTML content"'
+                echo 'No tests defined for HTML content'
             }
         }
         
